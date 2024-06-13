@@ -87,6 +87,14 @@ namespace SkillsTest
             {
                 Console.WriteLine($"Valideringsfejl: {ex.Message}");
             }
+
+            Console.WriteLine("Beregning af pris af leje:");
+            VenueRental rental = new VenueRental(new DateTime(2023, 5, 18));
+            DateTime weekdayDate = new DateTime(2023, 5, 18);
+            rental.CalculateRentalPrice(weekdayDate, 0, 0);
+
+            DateTime weekendDate = new DateTime(2023, 5, 20);
+            rental.CalculateRentalPrice(weekendDate, 0, 0);
         }
     }
 }

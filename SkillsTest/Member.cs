@@ -133,6 +133,7 @@ namespace SkillsTest
 
             return true;
         }
+
         public override string ToString()
         {
             return $"Id: {Id}, Name: {Name}, Adress: {Adress}, BirthDate: {BirthDate}, PhoneNumber: {PhoneNumber}, Email: {Email}";
